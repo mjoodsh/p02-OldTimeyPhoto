@@ -4,7 +4,7 @@
 ** p02: Old Timey Photo
 ** -The program starts by asking the user about the image file which is in BMP format.
 ** -The program will store the file.
-** -The program will convert the image pixel to a grescale.
+** -The program will convert the image pixel to a greyscale.
 ** -It will save the converted file as oldtimey.bmp
 */
  
@@ -44,7 +44,7 @@ int main()
 		for(int j=0;j<bmp[i].size();j++){ 
 			rgbAvg=(bmp[i][j].red+bmp[i][j].green+bmp[i][j].blue)/3; 
 			// Finding the average of the three components
-			newBmp[i][j].red=(rgbAvg); 
+			newBmp[i][j].red=rgbAvg; 
 			newBmp[i][j].green=rgbAvg;
 			newBmp[i][j].blue=rgbAvg;
 			// Assign all three components to the average
